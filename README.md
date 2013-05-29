@@ -19,4 +19,4 @@ summarize cliques in a graph -- removing redundancy from overlapping cliques
 +  ith line:	vertex i	// id, deg, list of neighbors
 
 ### Refrence
-[1] J. Wang, J. Cheng, A. Fu. [Redundancy-Aware Maximal Cliques](http://www.cse.cuhk.edu.hk/~jwang/publication/kdd13.pdf) (SIGKDD'13)
+J. Wang, J. Cheng, A. Fu. [Redundancy-Aware Maximal Cliques](http://www.cse.cuhk.edu.hk/~jwang/publication/kdd13.pdf) (SIGKDD'13)
