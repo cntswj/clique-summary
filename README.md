@@ -22,5 +22,5 @@ implements the idea in paper [Redundancy-Aware Maximal Cliques][1]:
 +  ith line:	vertex i	// id, deg, list of neighbors
 
 ### Reference
-[1]: J. Wang, J. Cheng, A. Fu. http://www.cse.cuhk.edu.hk/~jwang/publication/kdd13.pdf (SIGKDD'13)
-"Redundancy-Aware Maximal Cliques"
+[1]: http://www.cse.cuhk.edu.hk/~jwang/publication/kdd13.pdf (SIGKDD'13)
+"Redundancy-Aware Maximal Cliques" J. Wang, J. Cheng, A. Fu.
