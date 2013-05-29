@@ -1,5 +1,4 @@
-Function
-------------
+## Function
 summarize cliques in a graph -- removing redundancy from overlapping cliques
 
 Output
@@ -24,5 +23,5 @@ Input format
 
 Refrence
 ------------
-[1] J. Wang, J. Cheng, A. Fu
+[1]: J. Wang, J. Cheng, A. Fu
 "Redundancy-Aware Maximal Cliques" (SIGKDD'13)
