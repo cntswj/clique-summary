@@ -1,5 +1,5 @@
 ### Purpose
-implements the idea in paper [clique][1]:
+implements the idea in paper [Redundancy-Aware Maximal Cliques][1]:
 +  computes a summary of all maximal cliques in a graph
 +  free of  redundancy from overlapping cliques
 
@@ -22,4 +22,5 @@ implements the idea in paper [clique][1]:
 +  ith line:	vertex i	// id, deg, list of neighbors
 
 ### Reference
-[1]: J. Wang, J. Cheng, A. Fu. [Redundancy-Aware Maximal Cliques](http://www.cse.cuhk.edu.hk/~jwang/publication/kdd13.pdf) (SIGKDD'13)
+[1]: J. Wang, J. Cheng, A. Fu. http://www.cse.cuhk.edu.hk/~jwang/publication/kdd13.pdf (SIGKDD'13)
+"Redundancy-Aware Maximal Cliques"
