@@ -22,4 +22,4 @@ implements the idea in paper [1]:
 +  ith line:	vertex i	// id, deg, list of neighbors
 
 ### Reference
-J. Wang, J. Cheng, A. Fu. [Redundancy-Aware Maximal Cliques](http://www.cse.cuhk.edu.hk/~jwang/publication/kdd13.pdf) (SIGKDD'13)
+[1]: J. Wang, J. Cheng, A. Fu. [Redundancy-Aware Maximal Cliques](http://www.cse.cuhk.edu.hk/~jwang/publication/kdd13.pdf) (SIGKDD'13)
