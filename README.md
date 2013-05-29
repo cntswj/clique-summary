@@ -1,4 +1,4 @@
-## Function
+### Function
 summarize cliques in a graph -- removing redundancy from overlapping cliques
 
 Output
