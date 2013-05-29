@@ -9,7 +9,7 @@ summarize cliques in a graph -- removing redundancy from overlapping cliques
 ### Program parameters
 1.  input file
 2.  tau
-3.  R|D	// R for randomized algorithm, D for deterministic
+3.  R|D // R for randomized algorithm, D for deterministic
 4.  G|L	// G to switch on global filter, L to switch off
 5.  output file	// for saving summary
 
@@ -19,4 +19,4 @@ summarize cliques in a graph -- removing redundancy from overlapping cliques
 +  ith line:	vertex i	// id, deg, list of neighbors
 
 ### Refrence
- J. Wang, J. Cheng, A. Fu. [Redundancy-Aware Maximal Cliques](http://www.cse.cuhk.edu.hk/~jwang/publication/kdd13.pdf)(SIGKDD'13)
+[1] J. Wang, J. Cheng, A. Fu. [Redundancy-Aware Maximal Cliques](http://www.cse.cuhk.edu.hk/~jwang/publication/kdd13.pdf) (SIGKDD'13)
