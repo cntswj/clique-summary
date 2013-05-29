@@ -1,6 +1,8 @@
 ### Purpose
+implements the idea in paper [1]:
 +  computes a summary of all maximal cliques in a graph
 +  free of  redundancy from overlapping cliques
+
 
 ### Program output
 +  # cliques in summary
