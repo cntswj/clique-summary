@@ -50,6 +50,6 @@ _top-k results with diversity_ and _interactive clique exploration_.
 
 
 ##### Reference
-> J. Wang, J. Cheng, A. Fu.  
-> Redundancy-Aware Maximal Cliques.  
-> *19th ACM SIGKDD Conference On Knowledge Discovery and Data Mining* (KDD'13), Chicago, USA
+__J. Wang__, J. Cheng, A. Fu.  
+Redundancy-Aware Maximal Cliques.  
+_19th ACM SIGKDD Conference On Knowledge Discovery and Data Mining_ (KDD'13), Chicago, USA
