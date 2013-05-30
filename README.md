@@ -1,7 +1,16 @@
 ##### Purpose
-implements ideas in kdd'13 paper [Redundancy-Aware Maximal Cliques](http://www.cse.cuhk.edu.hk/~jwang/publication/kdd13.pdf ):
-+  computes a summary of all maximal cliques in a graph
-+  free of  redundancy from overlapping cliques
+This software implements ideas in kdd'13 paper [Redundancy-Aware Maximal Cliques](http://www.cse.cuhk.edu.hk/~jwang/publication/kdd13.pdf ).
+
+Recent research efforts have made notable progress in improving
+the performance of (exhaustive) maximal clique enumeration (MCE).
+However, existing algorithms still suffer from exploring the huge
+search space of MCE. Furthermore, their results are often undesirable
+as many of the returned maximal cliques have large overlapping parts.
+This redundancy leads to problems in both computational efﬁciency and
+usefulness of MCE. We aim at providing a concise and complete summary of the set of
+maximal cliques, which is useful to many applications. We propose
+the notion of $\tau$-visible MCE to achieve
+this goal and design algorithms to realize the notion.
 
 
 ##### Program output
