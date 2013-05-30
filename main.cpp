@@ -159,7 +159,11 @@ int main(int argc, char **argv)
     srand( time(NULL) );
 
     if (argc<6) {
-        printf("Usage: \t 1) graph_file\n\t 2) tau\n\t 3) R(andomized/D(eterministic)\n\t 4) G(lobal)/L(ocal)\n\t 5) output_file\n");
+        printf("Usage: \t   1) graph_file\n\t
+                            2) tau\n\t
+                            3) R(andomized/D(eterministic)\n\t
+                            4) G(lobal)/L(ocal)\n\t
+                            5) output_file\n");
         exit(1);
     }
 
