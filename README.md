@@ -12,7 +12,7 @@ usefulness of MCE.
 
 We aim at providing a concise and complete summary of the set of
 maximal cliques, which is useful to many applications. We propose
-the notion of **t\-visible MCE** to achieve
+the notion of _t\-visible MCE_ to achieve
 this goal and design algorithms to realize the notion. The algorithm
 _samples_ the set of original maxmal cliques, using a recursive
 search with part of the search branches pruned. The algorithn is accompanied
@@ -37,15 +37,15 @@ _top-k results with diversity_ and _interactive clique exploration_.
 ##### Program parameters
 1.  \[input file\]
 2.  \[$\tau\]
-3.  \[R|D\] ( _R_ for randomized algorithm, _D_ for deterministic)
-4.  \[G|L\] ( _G_ to switch on global filter, _L_ to switch off)
-5.  \[output_file\]  (summary, one clique per line)
+3.  \[R|D\] \(_R_ for randomized algorithm, _D_ for deterministic\)
+4.  \[G|L\] \( _G_ to switch on global filter, _L_ to switch off\)
+5.  \[output_file\]  \(summary, one clique per line\)
   
 
 ##### Input file format
 +  ascii file, adjacency lists
-+  1st line:	_n_ , _m_	for # of vertices/edges
-+  ith line:	vertex _i_ described by	 _id_ , _deg_ , _list of neighbors_
++  1st line:	_n_, _m_	for # of vertices/edges
++  ith line:	vertex _i_ described by	 _id_, _deg_, _list of neighbors_
 
 
 ##### Reference
