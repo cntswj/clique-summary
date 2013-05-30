@@ -8,7 +8,7 @@ implements ideas in kdd'13 paper [Redundancy-Aware Maximal Cliques](http://www.c
 +  # cliques in summary
 +  top-10 cliques scored by coverage
 +  a summary
-+  
+
 
 ##### Program parameters
 1.  input file
@@ -16,7 +16,7 @@ implements ideas in kdd'13 paper [Redundancy-Aware Maximal Cliques](http://www.c
 3.  R | D // R for randomized algorithm, D for deterministic
 4.  G | L  // G to switch on global filter, L to switch off
 5.  output file  // for saving summary
-6.  
+  
 
 ##### Input file format
 +  ascii file, adjacency lists
@@ -25,6 +25,6 @@ implements ideas in kdd'13 paper [Redundancy-Aware Maximal Cliques](http://www.c
 
 
 ##### Reference
-J. Wang, J. Cheng, A. Fu.
-Redundancy-Aware Maximal Cliques
-*19th ACM SIGKDD Conference On Knowledge Discovery and Data Mining* (KDD'13), Chicago, USA
+> J. Wang, J. Cheng, A. Fu.
+> Redundancy-Aware Maximal Cliques
+> *19th ACM SIGKDD Conference On Knowledge Discovery and Data Mining* (KDD'13), Chicago, USA
