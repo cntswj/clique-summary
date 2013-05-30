@@ -2,15 +2,19 @@
 This software implements ideas in kdd'13 paper [Redundancy-Aware Maximal Cliques](http://www.cse.cuhk.edu.hk/~jwang/publication/kdd13.pdf ).
 
 Recent research efforts have made notable progress in improving
-the performance of (exhaustive) maximal clique enumeration (MCE).
+the performance of (exhaustive) _maximal clique enumeration_ (MCE).
 However, existing algorithms still suffer from exploring the huge
 search space of MCE. Furthermore, their results are often undesirable
 as many of the returned maximal cliques have large overlapping parts.
 This redundancy leads to problems in both computational efﬁciency and
-usefulness of MCE. We aim at providing a concise and complete summary of the set of
+usefulness of MCE.
+
+We aim at providing a concise and complete summary of the set of
 maximal cliques, which is useful to many applications. We propose
-the notion of $\tau$-visible MCE to achieve
-this goal and design algorithms to realize the notion.
+the notion of _$\tau$-visible MCE_ to achieve
+this goal and design algorithms to realize the notion. We may use
+the reﬁned output space in efficient computations of, for example,
+_top-k results with diversity_ and _interactive clique exploration_.
 
 
 ##### Program output
