@@ -28,23 +28,24 @@ _top-k results with diversity_ and _interactive clique exploration_.
 
 
 ##### Program output
-+  # cliques in summary
++  the summary
++  # of cliques in summary
 +  top-10 cliques scored by coverage
-+  a summary
+
 
 
 ##### Program parameters
 1.  \[input file\]
 2.  \[$\tau\]
-3.  \[R|D\] (_R_ for randomized algorithm, _D_ for deterministic)
-4.  \[G|L\] (_G_ to switch on global filter, _L_ to switch off)
+3.  \[R|D\] ( _R_ for randomized algorithm, _D_ for deterministic)
+4.  \[G|L\] ( _G_ to switch on global filter, _L_ to switch off)
 5.  \[output_file\]  (summary, one clique per line)
   
 
 ##### Input file format
 +  ascii file, adjacency lists
-+  1st line:	n m	// # of vertices/edges
-+  ith line:	vertex i	// id, deg, list of neighbors
++  1st line:	_n_ , _m_	for # of vertices/edges
++  ith line:	vertex _i_ described by	 _id_ , _deg_ , _list of neighbors_
 
 
 ##### Reference
