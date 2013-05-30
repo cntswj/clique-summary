@@ -25,6 +25,6 @@ implements ideas in kdd'13 paper [Redundancy-Aware Maximal Cliques](http://www.c
 
 
 ##### Reference
-> J. Wang, J. Cheng, A. Fu.
-> Redundancy-Aware Maximal Cliques
+> J. Wang, J. Cheng, A. Fu.  
+> Redundancy-Aware Maximal Cliques.  
 > *19th ACM SIGKDD Conference On Knowledge Discovery and Data Mining* (KDD'13), Chicago, USA
