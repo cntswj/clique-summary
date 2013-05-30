@@ -19,8 +19,9 @@ search with part of the search branches pruned. The algorithn is accompanied
 with an optional _global filtering_ stage.
 
 Two versions of the algorithm are available -- randomized and deterministic.
-The former ensures summary quality under the notion of *visibility* probabilistically,
-whilethe latter does definitely. See the reference paper for details.
+The former ensures summary quality under the notion of *visibility*
+probabilistically, while the latter does definitely. Check the reference
+paper for details.
 
 One may use the reﬁned output space in efficient computations of, for example,
 _top-k results with diversity_ and _interactive clique exploration_.
