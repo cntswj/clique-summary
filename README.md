@@ -1,5 +1,5 @@
 ##### Purpose
-implements ideas in kdd'13 paper [Redundancy-Aware Maximal Cliques][1]:
+implements ideas in kdd'13 paper [Redundancy-Aware Maximal Cliques](http://www.cse.cuhk.edu.hk/~jwang/publication/kdd13.pdf ):
 +  computes a summary of all maximal cliques in a graph
 +  free of  redundancy from overlapping cliques
 
@@ -25,5 +25,6 @@ implements ideas in kdd'13 paper [Redundancy-Aware Maximal Cliques][1]:
 
 
 ##### Reference
-[1]: http://www.cse.cuhk.edu.hk/~jwang/publication/kdd13.pdf 
-"Redundancy-Aware Maximal Cliques (ACM SIGKDD'13)" J. Wang, J. Cheng, A. Fu.
+J. Wang, J. Cheng, A. Fu.
+Redundancy-Aware Maximal Cliques
+*19th ACM SIGKDD Conference On Knowledge Discovery and Data Mining* (KDD'13), Chicago, USA
