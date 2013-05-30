@@ -1,5 +1,6 @@
 ##### Purpose
-This software implements ideas in kdd'13 paper [Redundancy-Aware Maximal Cliques](http://www.cse.cuhk.edu.hk/~jwang/publication/kdd13.pdf ).
+This software implements ideas in paper
+[Redundancy-Aware Maximal Cliques](http://www.cse.cuhk.edu.hk/~jwang/publication/kdd13.pdf ) (see reference below).
 
 Recent research efforts have made notable progress in improving
 the performance of (exhaustive) _maximal clique enumeration_ (MCE).
