@@ -11,7 +11,7 @@ usefulness of MCE.
 
 We aim at providing a concise and complete summary of the set of
 maximal cliques, which is useful to many applications. We propose
-the notion of _$\tau$-visible MCE_ to achieve
+the notion of _t-visible MCE_ to achieve
 this goal and design algorithms to realize the notion. We may use
 the reﬁned output space in efficient computations of, for example,
 _top-k results with diversity_ and _interactive clique exploration_.
