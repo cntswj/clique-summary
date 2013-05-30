@@ -83,8 +83,6 @@ void degeneracyOrdering() {
 }
 
 inline double probSample(double r) {
-//    return (1-r)*(2-ltau)/(2-r-ltau);
-//    return (1-r)/(2-r-ltau);
     return r<tau? (tau-r)/(1-r) : 0;
 }
 
