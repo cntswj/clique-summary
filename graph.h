@@ -19,9 +19,11 @@ class Graph
         int V();
         int E();
         int hindex();
+        VI& adjvec(int i) {return gvec[i];}
         bool hasCore(int k);
 
     private:
+        VVI gvec;
         static const int maxe = 200000000;
         int n, m;
 		int *degree, *start, *elist;
