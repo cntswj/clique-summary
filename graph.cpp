@@ -16,7 +16,7 @@ Graph::Graph() {
 
 Graph::Graph(char *fname) {
     if (n>0) {
-        fprintf(stderr, "Graph already loaded!\n");
+        fprintf(stderr, "graph already loaded\n");
         exit(1);
     }
     build(fname);
@@ -47,6 +47,9 @@ void Graph::build(char *fname) {
     degree = (int*)alloc(n);
     elist = (int*)alloc(m);
 
+    gvec.clear();
+    gvec.resize(n);
+
     int ecur=0;
     for (int i=0; i<n; ++i) {
         int u, d, newd=0;
@@ -59,12 +62,12 @@ void Graph::build(char *fname) {
             if (v==u) continue;
             assert(v<n && v>=0);
             elist[ecur++] = v;
+            gvec[u].push_back(v);
             ++newd;
         }
         degree[u] = newd;
         sort(elist+start[u], elist+start[u]+newd);
     }
-//    printf("m = %d\n", ecur);
     fclose(fg);
 }
 
@@ -86,43 +89,4 @@ void Graph::print() {
         }
         printf("\n");
     }
-}
-
-bool Graph::hasCore(int k) {
-
-    queue<int> Q;
-    for (int i=0; i<n; ++i)
-        if (deg(i)<k)
-            Q.push(i);
-
-    int left=n;
-    while (!Q.empty()) {
-        int u = Q.front();
-        Q.pop();
-        printf("%d removed.\n", u+1);
-        --left;
-        for (int i=0; i<degree[u]; ++i) {
-            int v = dest(u,i);
-            --degree[v];
-            if (degree[v]==k-1)
-                Q.push(v);
-        }
-    }
-
-    return left>0;
-}
-
-int Graph::hindex() {
-    int *bin = (int*)alloc(n);
-    memset(bin, 0, sizeof(int)*n);
-    for (int i=0; i<n; ++i)
-        ++bin[degree[i]];
-
-    int c=0;
-    for (int i=n-1; i>=0; --i)
-        if ((c+=bin[i]) >= i)
-            return i;
-
-    return -1;
-    free(bin);
 }
