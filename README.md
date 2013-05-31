@@ -20,8 +20,8 @@ search with part of the search branches pruned. The algorithn is accompanied
 with an optional _global filtering_ stage.
 
 Two versions of the algorithm are available -- randomized and deterministic.
-The former ensures summary quality under the notion of _visibility_
-probabilistically, while the latter does definitely. Check the reference
+The former probabilistically guarantees the summary quality under the notion of _visibility_
+, while the latter does definitely. Check the reference
 paper for details.
 
 One may use the reﬁned output space in efficient computations of, for example,
