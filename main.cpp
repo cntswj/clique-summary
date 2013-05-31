@@ -22,7 +22,6 @@ bool randomized, filter, dotopk;
 char est;
 
 CliqueHolder holder;
-VVI gv;
 VI tmp, unit(1);
 int *lookup;
 int ntofilter;
@@ -60,8 +59,8 @@ void degeneracyOrdering() {
     for (int i=0; i<n; ++i) {
         int v=pv[i], dv=tdeg[v];
         lookup[v]=i;
-        for (int j=0; j<gv[v].size(); ++j) {
-            int w=gv[v][j], dw=tdeg[w];
+        for (int j=0; j<g.deg(v); ++j) {
+            int w=(g.adjvec(v))[j], dw=tdeg[w];
             if (dw>dv) {
                 int pw=pos[w];
                 int pt=bin[dw];
@@ -134,19 +133,19 @@ void cliSearch(VI &C, VI &cand, VI &prev, double pprod) {
     tmp=cand+prev;
     for (int i=0; i<tmp.size(); ++i) {
         int v=tmp[i];
-        int dv=(gv[v]*cand).size();
+        int dv=(g.adjvec(v)*cand).size();
         if (dv>maxdeg)
             maxdeg=dv, pivot = v;
     }
 
     // grow from each vertex in doing
-    VI doing(cand-gv[pivot]);
+    VI doing(cand-g.adjvec(pivot));
     for (int i=0; i<doing.size(); ++i) {
         int v = doing[i];
         unit[0]=v;
         C= C+unit;
         cand= cand-unit;
-        VI candt(cand*gv[v]), prevt(prev*gv[v]);
+        VI candt(cand*g.adjvec(v)), prevt(prev*g.adjvec(v));
         cliSearch(C, candt, prevt, pprod*pr);
         unit[0]=v;
         C= C-unit;
@@ -159,11 +158,7 @@ int main(int argc, char **argv)
     srand( time(NULL) );
 
     if (argc<6) {
-        printf("Usage: \t   1) graph_file\n\t
-                            2) tau\n\t
-                            3) R(andomized/D(eterministic)\n\t
-                            4) G(lobal)/L(ocal)\n\t
-                            5) output_file\n");
+        printf("Usage:\t    1) graph_file\n\t2) tau\n\t3) R(andomized/D(eterministic)\n\t4) G(lobal)/L(ocal)\n\t5) output_file\n");
         exit(1);
     }
 
@@ -172,15 +167,6 @@ int main(int argc, char **argv)
     randomized = (argv[3][0]=='R');
     filter = (argv[4][0]=='G');
     fcliques = fopen(argv[5], "w");
-
-
-    gv.resize(g.V());
-    VI vg;
-    for (int i=0; i<g.V(); ++i) {
-        vg.push_back(i);
-        for (int j=0; j<g.deg(i); ++j)
-            gv[i].push_back(g.dest(i,j));
-    }
 
     lookup = (int*)alloc(g.V());
     degeneracyOrdering();
@@ -193,18 +179,12 @@ int main(int argc, char **argv)
         if (g.deg(i)>g.deg(opvt))
             opvt=i;
     }
-    odoing=odoing-gv[opvt];
+    odoing=odoing-g.adjvec(opvt);
 
     // search outer loop
     holder.init(tau, filter, fcliques);
-    int nod=odoing.size();
-    int percentile = nod/100+1;
-    for (int ci=0; ci<nod; ++ci) {
+    for (int ci=0; ci<odoing.size(); ++ci) {
         // show progress
-        if (percentile==0 || (ci+1)%percentile==0) {
-           int percent=(ci+1)*100/nod;
-           printf("%d%%\n", percent);
-        }
         int i=odoing[ci];
 
         ocand.clear();
