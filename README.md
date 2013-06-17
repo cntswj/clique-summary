@@ -28,19 +28,18 @@ One may use the reﬁned output space in efficient computations of, for example,
 _top-k results with diversity_ and _interactive clique exploration_.
 
 
-##### Program output
-+  the summary
-+  # of cliques in summary
-+  top-10 cliques scored by coverage
-
-
-
-##### Program parameters
+##### Program arguments
 1.  \[input file\]
 2.  \[t\] \(as $\tau$ in the paper)
 3.  \[R|D\] \( _R_ for randomized algorithm, _D_ for deterministic\)
 4.  \[G|L\] \( _G_ to switch on global filter, _L_ to switch off\)
 5.  \[output file\]  \(summary, one clique per line\)
+
+
+##### Program output
++  the summary
++  # of cliques in summary
++  top-10 cliques scored by coverage
   
 
 ##### Input file format
