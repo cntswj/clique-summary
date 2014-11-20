@@ -35,14 +35,10 @@ VI operator*(VI &v1, VI &v2) {
 };
 
 void vprint(VI v, FILE *fout) {
-    int col=8;
     for (int i=0; i<v.size(); ++i) {
         fprintf(fout, "%-8d", v[i]);
-        if ((i+1)%col==0)
-            fprintf(fout, "\n");
     }
-    if (v.size()%col!=0)
-    	fprintf(fout, "\n");
+    fprintf(fout, "\n");
 }
 
 void list2adj(char *ifname, char *ofname) {
